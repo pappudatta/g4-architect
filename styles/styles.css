@@ -82,6 +82,7 @@ body{
 .banner-img{
     width: 100%;
     border-radius: 15px;
+    margin-bottom: 25PX;
 }
 
 
@@ -91,9 +92,11 @@ body{
 main{
     max-width: 1340px;
     margin: 0px auto;
+     /* border: 2px solid hotpink; */
 }
 main > section{
     margin-top: 130px;
+   
 }
 .teams{
     align-items: center;
@@ -156,6 +159,40 @@ main > section{
     font-weight: 600;
     margin-top: 10px;
 }
+/* sponsors part */
+
+.sponsors-section{
+    text-align: center;
+}
+.sponsors-container{
+    display: flex;
+    justify-content: space-between;
+   margin-top: 50px;
+   margin-bottom: 80px;
+}
+.sponsors-container img{
+   filter: grayscale(100%);
+}
+footer{
+    width: 1340px;
+    margin: 0px auto;
+}
+.footer-description{
+    font-size: .8rem;
+    font-weight: 400;
+    text-align: center;
+    color: #424242;
+    padding: 30px 300px 30px 300px;
+    background-color: rgb(255, 244, 231);
+    border-radius: 10px;
+    /* height: 100px; */
+    margin-bottom: 0px;
+}
+
+
+
+
+
 /* responsive features part */
 
 @media screen and  (max-width: 576px) {
@@ -179,6 +216,23 @@ main > section{
     }
     .section-taitles, .section-description{
         text-align: center;
+    }
+    .sponsors-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .sponsors-container img{
+        margin-bottom: 45px;
+        width: 40%;
+    }
+    footer{
+        width: 100%;
+       
+    }
+    .footer-description{
+             padding: 20px;
     }
 }
 
@@ -215,6 +269,27 @@ main > section{
     .fact-card{
         margin: 10px auto;
         
+    }
+    .sponsors-container{
+        /* display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        border: 2px solid hotpink; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+       
+        
+    }
+    .sponsors-container img{
+        /* margin-bottom: 45px; */
+        width: 15%;
+    }
+    footer{
+        width: 100%;
+       
+    }
+    .footer-description{
+             padding: 20px;
     }
     
 }
